@@ -7,6 +7,7 @@ const modalMessage = document.querySelector(".modal__message-container");
 const failedMessage = document.getElementById('fail');
 messageBtn.onclick = function () {
   modal.style.display = "block";
+  document.getElementById('email').focus();
 }
 
 closeBtn.onclick = function () {

@@ -5,4 +5,4 @@ import "../actions/filter";
 import "../actions/scroll";
 import "../actions/input";
 import '../components/message-modal';
-import '../reqs/github-req';
+// import '../reqs/github-req';

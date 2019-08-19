@@ -1,4 +1,6 @@
 import "bootstrap";
 import "../actions/clicks";
 import "../actions/hover";
-import "../reqs/github-req";
+import "../components/card-projects";
+import "../actions/filter";
+

@@ -1,20 +1,43 @@
 .cards {
   width: 100%;
   display: flex;
+  justify-content: center;
   flex-direction: row;
   flex-flow: wrap;
 }
 .card {
   width: 90%!important;
-  height: 10rem;
+  height: 12rem;
   color: $dark-grey;
   transition: background .3s ease;
-  margin: $m-size;
+  margin: $l-size;
   @media (min-width: $desktop-breakpoint) {
-    width: 20%!important;
-    height: 16rem;
+    width: 25%!important;
+    height: 18rem;
   }
   &:hover {
     background: $off-white;
   }
+}
+.card-body {
+  padding: 0;
+}
+.card-title {
+  padding: $m-size;
+  font-size: $font-size-medium;
+  background: $blue;
+  color: $off-white;
+}
+.card-subtitle {
+  padding: 1rem $s-size 0 $s-size;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  padding: 1rem $s-size 0 $s-size;
+}
+.card-link {
+  position: absolute;
+  bottom: $s-size;
+  left: $s-size;
 }

@@ -14,7 +14,7 @@ export const getRepos = () => {
         };
         return project;
       }).sort((a, b) => {
-        return a.updated_at < b.updated_at ? 1 : -1;
+        return a.created_at < b.created_at ? 1 : -1;
       }).map((project) => {
         addCard(project);
         return project;

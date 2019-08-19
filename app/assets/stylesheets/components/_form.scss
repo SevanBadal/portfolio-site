@@ -1,0 +1,23 @@
+#email, #name {
+  border: 1px solid #cacccd;
+  height: 4rem;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  > * {
+    margin-bottom: $m-size;
+    font-weight: 300;
+  }
+}
+
+.text-area {
+  height: 12rem;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+}

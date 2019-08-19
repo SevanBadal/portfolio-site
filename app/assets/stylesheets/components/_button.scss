@@ -49,3 +49,12 @@
 #btn-arrow {
   margin: 0 auto;
 }
+
+.btn-flat--submit {
+  @extend .btn-flat;
+  font-size: 1.8rem;
+  display: inline-block;
+  font-weight: 300;
+  line-height: 1;
+  width: 12rem;
+}

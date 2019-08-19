@@ -1,6 +1,7 @@
 import { getRepos } from '../reqs/github-repos';
 import { addCard } from '../components/card-projects';
 const myRepos = getRepos();
+console.log(myRepos)
 const filters = {
   searchText: ''
 }

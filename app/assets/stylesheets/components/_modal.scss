@@ -49,3 +49,6 @@
   display: none;
   justify-content: center;
 }
+.modal__message-container--fail {
+  @extend .modal__message-container;
+}

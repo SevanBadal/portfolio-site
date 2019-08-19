@@ -12,10 +12,16 @@ export const postMessage = (data) => {
 };
 
 const success = (response) => {
+  const failedMessage = document.getElementById('fail');
+  const successMessage = document.querySelector(".modal__message-container");
   if (response.status === 'success') {
     document.getElementById('email').value = '';
     document.getElementById('name').value = '';
     document.querySelector('.text-area').value = '';
-    document.querySelector(".modal__message-container").style.display = "flex";
+    failedMessage.style.display = "none";
+    successMessage.style.display = "flex";
+  } else {
+    failedMessage.style.display = "flex";
+    successMessage.style.display = "none";
   }
 }

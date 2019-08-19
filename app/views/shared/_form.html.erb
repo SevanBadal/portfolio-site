@@ -1,10 +1,8 @@
 <div id="formModal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
-    <div class="modal__message-container align-items-center">
-      <span class="modal__message">Message Sent</span>
-      <i class="modal__message-icon far fa-check-square"></i>
-    </div>
+    <%= render  "shared/success" %>
+    <%= render  "shared/failed" %>
     <form id="message-form">
       <h5>Email</h5>
       <input type="email" id="email" size="30" required />

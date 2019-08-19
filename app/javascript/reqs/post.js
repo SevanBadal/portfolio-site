@@ -7,13 +7,15 @@ export const postMessage = (data) => {
       'X-CSRF-Token': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
     }
   }).then(res => res.json())
-    .then(response => console.log('Success:', success()))
+    .then(response => success(response))
     .catch(error => console.error('Error:', error));
 };
 
-const success = () => {
-  document.getElementById('email').value = '';
-  document.getElementById('name').value = '';
-  document.querySelector('.text-area').value = '';
-  document.querySelector(".modal__message-container").style.display = "flex";
+const success = (response) => {
+  if (response.status === 'success') {
+    document.getElementById('email').value = '';
+    document.getElementById('name').value = '';
+    document.querySelector('.text-area').value = '';
+    document.querySelector(".modal__message-container").style.display = "flex";
+  }
 }

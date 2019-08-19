@@ -1,3 +1,20 @@
-.card__image {
-  height: 15rem;
+.cards {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+}
+.card {
+  width: 90%!important;
+  height: 10rem;
+  color: $dark-grey;
+  transition: background .3s ease;
+  margin: $m-size;
+  @media (min-width: $desktop-breakpoint) {
+    width: 20%!important;
+    height: 16rem;
+  }
+  &:hover {
+    background: $off-white;
+  }
 }

@@ -18,7 +18,7 @@ function updateFilter(e) {
 const filterProjects = (repos, filters) => {
   const filteredRepos = repos.then((projects) => {
     return projects.filter(function (project) {
-      const searchTextMatch = project.description.toLowerCase().includes(filters.searchText.toLowerCase());
+      const searchTextMatch = project.tags.toLowerCase().includes(filters.searchText.toLowerCase());
       return searchTextMatch;
     });
   });

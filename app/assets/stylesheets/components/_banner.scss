@@ -36,3 +36,12 @@
     margin-bottom: $m-size;
   }
 }
+
+#personal-info {
+  @media (max-width: $desktop-breakpoint) {
+    padding: 4rem;
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+  }
+}

@@ -6,7 +6,7 @@ export const getRepos = () => {
     .then((data) => {
       return data.map(({ name, created_at, updated_at, description, html_url })=> {
         const project = {
-          name,
+          name: name.toLowerCase(),
           updated_at: new Date(updated_at),
           created_at: new Date(created_at),
           description: description || "Sorry, no description. Please click to view the repo!",

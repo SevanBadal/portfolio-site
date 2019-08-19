@@ -10,6 +10,7 @@ export const getRepos = () => {
           updated_at: new Date(updated_at),
           created_at: new Date(created_at),
           description: description || "Sorry, no description. Please click to view the repo!",
+          tags: `${description} ${name}`,
           html_url
         };
         return project;

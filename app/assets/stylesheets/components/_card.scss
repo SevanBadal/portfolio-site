@@ -7,12 +7,12 @@
 }
 .card {
   width: 90%!important;
-  height: 12rem;
+  height: 16rem;
   color: $dark-grey;
   transition: background .3s ease;
   margin: $l-size;
   @media (min-width: $desktop-breakpoint) {
-    width: 25%!important;
+    width: 25rem!important;
     height: 18rem;
   }
   &:hover {

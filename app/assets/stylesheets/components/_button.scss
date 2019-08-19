@@ -18,6 +18,9 @@
   border-radius: 4px;
   background: #1EDD88;
   transition: background 0.3s ease;
+  @media (min-width: $desktop-breakpoint) {
+    margin-right: $m-size;
+  }
 }
 
 .btn-flat:hover {

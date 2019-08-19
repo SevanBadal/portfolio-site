@@ -30,7 +30,7 @@ const filterProjects = (repos, filters) => {
     });
     const count = filteredRepos.length;
     header.innerHTML = (
-      count === 1 ? `${count} result` : `${count} results`
+      count === 1 ? `${count} repository` : `${count} repositories`
       );
   });
 

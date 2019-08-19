@@ -21,6 +21,18 @@
 
 .banner__sub-title {
   font-weight: 300;
+  font-size: $font-size-large;
   font-family: $body-font;
   font-size: $font-size-small;
+  margin-top: $s-size;
+  @media (min-width: $desktop-breakpoint) {
+    margin-top: $m-size;
+  }
+}
+
+.stack {
+  margin-bottom: $s-size;
+  @media (min-width: $desktop-breakpoint) {
+    margin-bottom: $m-size;
+  }
 }

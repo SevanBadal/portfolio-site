@@ -37,3 +37,15 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+.modal__message-icon {
+  margin-right: 1rem;
+}
+.modal__message {
+  font-style: italic;
+  margin-right: 0.5rem;
+}
+.modal__message-container {
+  display: none;
+  justify-content: center;
+}

@@ -22,11 +22,17 @@ const filterProjects = (repos, filters) => {
       return searchTextMatch;
     });
   });
+  const header = document.querySelector('.header__title');
   document.querySelector('#projects').innerHTML = ''
   filteredRepos.then((filteredRepos) => {
     filteredRepos.forEach(repo => {
       addCard(repo);
     });
+    const count = filteredRepos.length;
+    header.innerHTML = (
+      count === 1 ? `${count} result` : `${count} results`
+      );
   });
+
 };
 

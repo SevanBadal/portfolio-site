@@ -8,7 +8,7 @@ export const addCard = ({ name, created_at, description, html_url }) => {
         <h6 class='card-subtitle text-muted'>${formattedDate}</h6>
         <p class='card-text'>${description}</p>
         <div class="link-container">
-          <a href='${html_url}' target='_default' class='card-link'>
+          <a href='${html_url}' target='_blank' class='card-link'>
             <i class='fas fa-code-branch'></i>
           </a>
         </div>

@@ -1,7 +1,11 @@
 # portfolio-site
-> Simple Inbox Simulator that loads fake data with faker.js.
+> A personal portfolio page integrated with my git repos
 
 ![](header.gif)
+
+## TODO
+
+1. Build a content management system for banner content and api so other people can download and utilize this layout
 
 ## Config
 

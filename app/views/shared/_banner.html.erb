@@ -2,18 +2,20 @@
   <div id="personal-info" class="container">
     <div class="d-flex align-items-center">
       <h1 class="mr-3"><strong>Sevan Golnazarian</strong></h1>
-      <a href="http://sevan-badal-cv.herokuapp.com/" target="_blank">
-        <%= image_tag  "cv-icon.svg", id: 'cv-icon' %>
-      </a>
     </div>
     <p class="banner__sub-title">VTC 2019 Advanced Software Development</p>
     <p class="banner__sub-title">Freelance Fullstack Developer</p>
     <p class="stack banner__sub-title">JavaScript + Ruby</p>
-    <a id="github" class="btn btn-flat" href="https://github.com/SevanBadal" target="_default"><i class="btn-icon fab fa-github"></i></a>
-    <a class="btn btn-flat" href="https://www.linkedin.com/in/sevan-golnazarian" target="_default"><i class="btn-icon fab fa-linkedin"></i></a>
-    <button id="message-btn" class="btn btn-flat"><i class="btn-icon far fa-envelope"></i></button>
-    <div class="btn btn-ghost" id="btn-arrow">
-      <i class="btn-icon fas fa-arrow-circle-down"></i>
+    <div class="btn-container">
+      <a id="github" class="btn btn-flat" href="https://github.com/SevanBadal" target="_default"><i class="btn-icon fab fa-github"></i></a>
+      <a class="btn btn-flat" href="https://www.linkedin.com/in/sevan-golnazarian" target="_default"><i class="btn-icon fab fa-linkedin"></i></a>
+      <a class="btn btn-flat" href="http://sevan-badal-cv.herokuapp.com/" target="_blank">
+          <%= image_tag  "cv-icon.png", id: 'cv-icon' %>
+      </a>
+      <button id="message-btn" class="btn btn-flat"><i class="btn-icon far fa-envelope"></i></button>
+      <div class="btn btn-ghost" id="btn-arrow">
+        <i class="btn-icon fas fa-arrow-circle-down"></i>
+      </div>
     </div>
     <%= render  "shared/form" %>
   </div>

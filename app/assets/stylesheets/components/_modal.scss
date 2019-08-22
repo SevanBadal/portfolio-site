@@ -48,6 +48,9 @@
 .modal__message-container {
   display: none;
   justify-content: center;
+  position: absolute;
+  right: 0;
+  left: 0;
 }
 .modal__message-container--fail {
   @extend .modal__message-container;

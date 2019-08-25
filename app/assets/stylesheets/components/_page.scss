@@ -8,3 +8,9 @@ p {
   height: 3rem;
   vertical-align: text-bottom;
 }
+#top-half{
+  @media (max-width: $desktop-breakpoint) {
+    display: flex;
+    justify-content: space-around;
+  }
+}

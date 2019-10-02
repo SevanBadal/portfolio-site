@@ -14,4 +14,4 @@ $('.list-inline').on('click', 'span', function () {
   $(this).addClass('active');
 });
 
-export { scrollScreen };
+// export { scrollScreen };

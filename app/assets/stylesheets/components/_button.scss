@@ -1,5 +1,5 @@
 .btn-ghost {
-  color: #4A4A4A;
+  color: whitesmoke;
   padding: 8px 24px;
   border-radius: 50px;
   font-weight: lighter;
@@ -9,7 +9,7 @@
 
 .btn-ghost:hover {
   opacity: 1;
-  color: $blue;
+  color: white;
 }
 .btn-container {
   @media (max-width: $desktop-breakpoint) {
@@ -21,7 +21,7 @@
     .btn-ghost {
       padding: 8px 24px;
       margin-left: 0;
-      color: $blue;
+      color: whitesmoke;
     }
   }
 }

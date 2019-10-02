@@ -1,6 +1,12 @@
 .header {
   background: #F7F7F7;
+  opacity: .9;
   width: 100%;
+  display: flex;
+  @media (max-width: $desktop-breakpoint) {
+    display: block;
+    text-align: center;
+  }
 }
 .header__title {
   font-weight: 300;

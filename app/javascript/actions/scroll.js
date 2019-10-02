@@ -28,4 +28,4 @@ const myEfficientFn = debounce(function (e) {
     this.oldScroll = this.scrollY;
 }, 75);
 
-window.addEventListener('scroll', myEfficientFn);
+// window.addEventListener('scroll', myEfficientFn);

@@ -1,16 +1,15 @@
 .cards {
   width: 100%;
   display: flex;
-  justify-content: center;
-  flex-direction: row;
   flex-flow: wrap;
+  flex-basis: auto;
 }
 .card {
   width: 90%!important;
   height: 16rem;
   color: $dark-grey;
   transition: background .3s ease;
-  margin: $l-size;
+  margin: 16px auto;
   @media (min-width: $desktop-breakpoint) {
     width: 25rem!important;
     height: 18rem;
@@ -24,9 +23,13 @@
 }
 .card-title {
   padding: $m-size;
+  height: 5rem;
+  text-overflow: ellipsis;
   font-size: $font-size-medium;
-  background: $blue;
+  background: #25283D;
   color: $off-white;
+  overflow: hidden;
+white-space: nowrap;
 }
 .card-subtitle {
   padding: 1rem $s-size 0 $s-size;

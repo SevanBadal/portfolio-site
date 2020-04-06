@@ -11,26 +11,12 @@
   opacity: 1;
   color: white;
 }
-.btn-container {
-  @media (max-width: $desktop-breakpoint) {
-    display: flex;
-    flex-direction: column;
-    #btn-arrow {
-      margin: 0 1rem 0 0;
-    }
-    .btn-ghost {
-      padding: 8px 24px;
-      margin-left: 0;
-      color: whitesmoke;
-    }
-  }
-}
 .btn-flat {
   color: white;
   padding: 8px 24px;
   margin: 1rem 1rem 1rem 0;
   border-radius: 4px;
-  background: #1EDD88;
+  // background: #1EDD88; 
   transition: background 0.3s ease;
   @media (min-width: $desktop-breakpoint) {
     margin-right: $m-size;
@@ -39,7 +25,7 @@
 
 .btn-flat:hover {
   //background: #1BCB7F;
-  background: $blue;
+  background: #AE6D74;
   color: white;
 }
 
@@ -54,7 +40,7 @@
 }
 
 .btn-gradient:hover {
-  background: linear-gradient(#147EFF, #0F67DA);
+  background: #1EDD88;
   color: white;
 }
 .btn-icon {

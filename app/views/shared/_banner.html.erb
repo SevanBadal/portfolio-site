@@ -1,21 +1,23 @@
 <div id="top-half" class="top banner">
   <div id="personal-info" class="container">
-
-      <h1 class="mr-3"><strong>Sevan Badal</strong></h1>
+    <%= image_tag  "sevanbadal.jpeg", class: 'avatar-bordered' %>
+    <div class="btn-container">
+    <a id="github" class="btn btn-flat" href="https://github.com/SevanBadal" target="_default"><i class="btn-icon fab fa-github"></i></a>
+    <a class="btn btn-flat" href="https://www.linkedin.com/in/sevan-golnazarian" target="_default"><i class="btn-icon fab fa-linkedin"></i></a>
+    <a class="btn btn-flat" href="http://sevan-badal-cv.herokuapp.com/" target="_blank">
+        <%= image_tag  "cv-icon.png", id: 'cv-icon' %>
+    </a>
+    <button id="message-btn" class="btn btn-flat"><i class="btn-icon far fa-envelope"></i></button>
+  </div>
+    <h1 class="mr-3 name">
+    <strong>Sevan</strong> 
+    <div class="btn btn-ghost" id="btn-arrow"><i class="btn-icon fas fa-arrow-circle-down"></i></div>
+    <strong>Badal</strong>
+    </h1>
 
     <p class="banner__sub-title">VTC 2021 M.S. Software Engineering</p>
     <p class="stack banner__sub-title">JavaScript + Swift - I enjoy Haskell, too, just to keep my skills functional ;)</p>
-    <div class="btn-container">
-      <a id="github" class="btn btn-flat" href="https://github.com/SevanBadal" target="_default"><i class="btn-icon fab fa-github"></i></a>
-      <a class="btn btn-flat" href="https://www.linkedin.com/in/sevan-golnazarian" target="_default"><i class="btn-icon fab fa-linkedin"></i></a>
-      <a class="btn btn-flat" href="http://sevan-badal-cv.herokuapp.com/" target="_blank">
-          <%= image_tag  "cv-icon.png", id: 'cv-icon' %>
-      </a>
-      <button id="message-btn" class="btn btn-flat"><i class="btn-icon far fa-envelope"></i></button>
-      <div class="btn btn-ghost" id="btn-arrow">
-        <i class="btn-icon fas fa-arrow-circle-down"></i>
-      </div>
-    </div>
+  
     <%= render  "shared/form" %>
   </div>
 </div>

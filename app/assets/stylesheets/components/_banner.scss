@@ -3,19 +3,18 @@
   background-position: top;
   padding: $m-size;
   width: 100vw;
-  background-color: #4A4B4E;
+  background-color: #95D4D9;
   text-align: center;
   h1 {
     margin: 0;
     color: white;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    text-shadow: 1px 1px 3px rgba(235,235, 245,0.1);
     font-size: 32px;
     font-weight: bold;
   }
   p.banner__sub-title {
     font-size: 20px;
     color: white;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
     font-weight: 300;
   }
   
@@ -27,6 +26,9 @@
   font-family: $body-font;
   font-size: $font-size-small;
   margin-top: $s-size;
+}
+.name {
+  font-family: 'Galada', cursive;
 }
 
 .stack {

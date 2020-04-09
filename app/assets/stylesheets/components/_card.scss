@@ -3,9 +3,6 @@
   display: flex;
   flex-flow: wrap;
   flex-basis: auto;
-  &child:not(:hover) {
-    scale: 0.7;
-  }
 }
 .card {
   width: 90%!important;
@@ -23,7 +20,9 @@
   }
   &:hover {
     background: $off-white;
-    
+    .card-body:not(:hover) {
+      scale: 0.3;
+    }
   }
 
 }

@@ -5,7 +5,14 @@
   font-size: 1.8rem;
 
 }
-
+#send-message {
+  color: black;
+  line-height: 1.2;
+  font-size: 1.25rem;
+  &:hover {
+    color: white;
+  }
+}
 form {
   display: flex;
   flex-direction: column;

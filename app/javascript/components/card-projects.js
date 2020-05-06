@@ -2,7 +2,7 @@ export const addCard = ({ name, created_at, description, html_url }) => {
   const projectRoot = document.querySelector("#projects");
   const formattedDate = created_at.toString().replace(/(\d{2}\:.*)/, '');
   const card = `
-    <div class='card' style='width: 18rem'>
+    <div class='card' style='width: 18rem; border-radius: 8px; overflow: hidden;'>
       <div class='card-body'>
         <h5 class='card-title'>${name}</h5>
         <h6 class='card-subtitle text-muted'>${formattedDate}</h6>
